@@ -11,7 +11,7 @@ def repeat(phrase)
 end
 
 def shout(phrase)
-
+  phrase.to_s.upcase
 end
 
 def titleize(phrase)
