@@ -17,3 +17,7 @@ def multiply(numbers)
     product * number
   end
 end
+
+def factorial
+
+end
