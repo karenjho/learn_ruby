@@ -3,5 +3,5 @@ def ftoc(ftemp)
 end
 
 def ctof(ctemp)
-
+  ctemp * 9 / 5 + 32
 end
