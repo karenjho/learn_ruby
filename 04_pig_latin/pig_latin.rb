@@ -5,16 +5,21 @@ def translate(phrase)
   qu = [ "qu" ]
 
   result = phrase.split(" ").map do |word|
-    if consonants.include?(word.split("")[0]) && consonants.include?(word.split("")[1]) && consonants.include?(word.split("")[2])
+    if consonants.include?(word[0]) && consonants.include?(word[1]) && consonants.include?(word[2])
       word_length = word.length
-      phoneme = word.split("")[0..2].join("")
-      rest_of_word = word.split("")[3..word_length].join("")
+      phoneme = word[0..2]
+      rest_of_word = word[3..word_length]
       rest_of_word + phoneme + "ay"
-    elsif consonants.include?(word.split("")[0]) && consonants.include?(word.split("")[1])
+    elsif consonants.include?(word[0]) && consonants.include?(word[1])
       word_length = word.length
-      phoneme = word.split("")[0..1].join("")
-      rest_of_word = word.split("")[2..word_length].join("")
+      phoneme = word[0..1]
+      rest_of_word = word[2..word_length]
       rest_of_word + phoneme + "ay"
+    elsif consonants.include?(word[0])
+      word_length = word.length
+      consonant = word[0].to_s
+      rest_of_word = word[1..word_length]
+      rest_of_word + consonant + "ay"
     else
       word + "ay"
     end
