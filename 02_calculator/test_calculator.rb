@@ -45,6 +45,7 @@ class TestCalculator < MiniTest::Test
   # If you feel you're up for the challenge, fill in the missing code in the tests below,
   # based off the descriptions, and get them to pass.
   def test_multiplies_two_numbers
+    assert_equal 35, multiply([5,7])
   end
 
   def test_multiplies_several_numbers
