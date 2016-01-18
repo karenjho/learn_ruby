@@ -8,6 +8,10 @@ def translate(phrase)
       word_length = word.length
       rest_of_word = word[2..word_length]
       rest_of_word + "qu" + "ay"
+    elsif word[0..2] == "squ"
+      word_length = word.length
+      rest_of_word = word[3..word_length]
+      rest_of_word + "squ" + "ay"
     elsif consonants.include?(word[0]) && consonants.include?(word[1]) && consonants.include?(word[2])
       word_length = word.length
       phoneme = word[0..2]
