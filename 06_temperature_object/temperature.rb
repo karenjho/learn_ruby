@@ -7,11 +7,19 @@ attr_accessor :f, :c
   end
 
   def to_fahrenheit
-    @c.to_i * 9 / 5 + 32
+    if @c == nil
+      @f
+    else
+      ( @c.to_i * 9 / 5 + 32.00 ).round(0)
+    end
   end
 
   def to_celsius
-    ( @f.to_i - 32 ) * 5 / 9
+    if @f == nil
+      @c
+    else
+      ( ( @f.to_i - 32 ) * 5 / 9.00 ).round(0)
+    end
   end
 
   def self.in_celsius(temp)
@@ -26,11 +34,13 @@ end
 class Celsius < Temperature
   def initialize(temp)
     @c = temp
+    @f = nil
   end
 end
 
 class Fahrenheit < Temperature
   def initialize(temp)
     @f = temp
+    @c = nil
   end
 end
