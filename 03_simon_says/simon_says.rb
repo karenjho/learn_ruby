@@ -18,6 +18,6 @@ def titleize(phrase)
 
 end
 
-def first_word
+def first_word(phrase)
 
 end
