@@ -15,7 +15,16 @@ def shout(phrase)
 end
 
 def titleize(phrase)
-  phrase.split(" ").map(&:capitalize).join(" ")
+  words_no_cap = [ "the", "over", "and" ]
+  words = phrase.capitalize.split(" ")
+  result = words.map do |word|
+    if words_no_cap.include?(word)
+      word
+    else
+      word.capitalize
+    end
+  end
+  result.join(" ")
 end
 
 def first_word(phrase)
