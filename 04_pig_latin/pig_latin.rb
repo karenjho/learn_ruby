@@ -2,10 +2,13 @@ def translate(phrase)
   alphabet = ("a".."z").to_a
   vowels = [ "a","e","i","o","u" ]
   consonants = alphabet - vowels
-  qu = [ "qu" ]
 
   result = phrase.split(" ").map do |word|
-    if consonants.include?(word[0]) && consonants.include?(word[1]) && consonants.include?(word[2])
+    if word[0..1] == "qu"
+      word_length = word.length
+      rest_of_word = word[2..word_length]
+      rest_of_word + "qu" + "ay"
+    elsif consonants.include?(word[0]) && consonants.include?(word[1]) && consonants.include?(word[2])
       word_length = word.length
       phoneme = word[0..2]
       rest_of_word = word[3..word_length]
