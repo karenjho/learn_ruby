@@ -2,6 +2,6 @@ def hello
   "hello"
 end
 
-def greet
+def greet(name)
 
 end
