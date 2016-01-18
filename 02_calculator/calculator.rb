@@ -18,6 +18,6 @@ def multiply(numbers)
   end
 end
 
-def factorial
+def factorial(number)
 
 end
