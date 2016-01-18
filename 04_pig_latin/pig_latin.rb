@@ -5,7 +5,14 @@ def translate(phrase)
   qu = [ "qu" ]
 
   result = phrase.split(" ").map do |word|
-    word + "ay"
+    if consonants.include?(word.split("")[0]) && consonants.include?(word.split("")[1]) && consonants.include?(word.split("")[2])
+      word_length = word.length
+      phoneme = word.split("")[0..2].join("")
+      rest_of_word = word.split("")[3..word_length].join("")
+      rest_of_word + phoneme + "ay"
+    else
+      word + "ay"
+    end
   end
   result.join(" ")
 end
