@@ -3,7 +3,8 @@ def echo(phrase)
 end
 
 def start_of_word(phrase, num = 1)
-
+  array_phrase = Array.new(phrase.split(""))
+  array_phrase[(0..(num-1))].join("")
 end
 
 def repeat(phrase, num = 2)
