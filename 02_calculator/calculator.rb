@@ -5,3 +5,7 @@ end
 def add(number_1, number_2)
 
 end
+
+def subtract
+
+end
