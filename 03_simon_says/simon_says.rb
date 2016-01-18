@@ -1,4 +1,4 @@
-def echo
+def echo(phrase)
 
 end
 
@@ -6,14 +6,14 @@ def start_of_word
 
 end
 
-def repeat
+def repeat(phrase)
 
 end
 
-def shout
+def shout(phrase)
 
 end
 
-def titleize
+def titleize(phrase)
 
 end
