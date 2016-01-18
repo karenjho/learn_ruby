@@ -1,4 +1,4 @@
-def ftoc
+def ftoc(ftemp)
 
 end
 
