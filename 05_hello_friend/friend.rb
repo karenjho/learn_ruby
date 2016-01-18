@@ -1,7 +1,11 @@
 class Friend
-  attr_accessor :name
+  attr_accessor :friend
 
-  def initialize(name = "")
-    @name = name
+  def initialize
+    @friend = friend
   end
+
+  def greet
+  end
+
 end
