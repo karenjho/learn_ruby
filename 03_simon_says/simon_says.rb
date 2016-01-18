@@ -15,7 +15,7 @@ def shout(phrase)
 end
 
 def titleize(phrase)
-
+  phrase.split(" ").map(&:capitalize).join(" ")
 end
 
 def first_word(phrase)
