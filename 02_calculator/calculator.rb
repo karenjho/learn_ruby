@@ -2,6 +2,6 @@ def sum(numbers)
 
 end
 
-def add
+def add(number_1, number_2)
 
 end
