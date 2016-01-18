@@ -5,4 +5,12 @@ attr_accessor :f, :c
     @f = options[:f]
     @c = options[:c]
   end
+
+  def to_fahrenheit
+
+  end
+
+  def to_celsius
+
+  end
 end
