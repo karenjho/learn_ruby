@@ -2,6 +2,6 @@ def ftoc(ftemp)
 
 end
 
-def ctof
+def ctof(ctemp)
 
 end
