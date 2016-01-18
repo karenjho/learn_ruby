@@ -1,5 +1,7 @@
 def sum(numbers)
-
+  numbers.inject(0) do |sum, number|
+    sum + number
+  end
 end
 
 def add(number_1, number_2)
