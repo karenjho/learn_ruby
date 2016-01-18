@@ -7,10 +7,10 @@ attr_accessor :f, :c
   end
 
   def to_fahrenheit
-
+  
   end
 
   def to_celsius
-
+    ( @f - 32 ) * 5 / 9
   end
 end
