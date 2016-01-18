@@ -1,9 +1,9 @@
 def echo(phrase)
-
+  phrase.to_s
 end
 
 def start_of_word(phrase, num = 1)
-  
+
 end
 
 def repeat(phrase)
