@@ -19,5 +19,5 @@ def multiply(numbers)
 end
 
 def factorial(number)
-  (1..number).to_a.inject(:*)
+  (1..number).to_a.inject(:*) || 1
 end
