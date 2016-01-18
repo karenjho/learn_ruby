@@ -8,10 +8,7 @@ def start_of_word(phrase, num = 1)
 end
 
 def repeat(phrase, num = 2)
-  result = []
-  num.times do result << phrase
-  end
-  result.join(" ")
+  num.times.collect { phrase }.join(" ")
 end
 
 def shout(phrase)
