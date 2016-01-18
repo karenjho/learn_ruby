@@ -19,5 +19,5 @@ def titleize(phrase)
 end
 
 def first_word(phrase)
-
+  phrase.split(" ")[0]
 end
