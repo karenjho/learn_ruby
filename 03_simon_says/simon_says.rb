@@ -17,3 +17,7 @@ end
 def titleize(phrase)
 
 end
+
+def first_word
+
+end
