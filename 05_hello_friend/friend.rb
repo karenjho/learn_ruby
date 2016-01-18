@@ -5,7 +5,8 @@ class Friend
     @friend = friend
   end
 
-  def greet
+  def greet(name = "")
+    "Hello #{name}!"
   end
 
 end
