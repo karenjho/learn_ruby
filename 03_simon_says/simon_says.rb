@@ -2,8 +2,8 @@ def echo(phrase)
 
 end
 
-def start_of_word
-
+def start_of_word(phrase, num = 1)
+  
 end
 
 def repeat(phrase)
