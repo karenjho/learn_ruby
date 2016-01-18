@@ -10,6 +10,11 @@ def translate(phrase)
       phoneme = word.split("")[0..2].join("")
       rest_of_word = word.split("")[3..word_length].join("")
       rest_of_word + phoneme + "ay"
+    elsif consonants.include?(word.split("")[0]) && consonants.include?(word.split("")[1])
+      word_length = word.length
+      phoneme = word.split("")[0..1].join("")
+      rest_of_word = word.split("")[2..word_length].join("")
+      rest_of_word + phoneme + "ay"
     else
       word + "ay"
     end
